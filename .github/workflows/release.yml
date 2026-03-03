@@ -1,46 +1,46 @@
-name: Release
+# name: Release
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-permissions:
-  contents: write
+# permissions:
+#   contents: write
 
-jobs:
-  release:
-    runs-on: ubuntu-latest
+# jobs:
+#   release:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+#     steps:
+#       - uses: actions/checkout@v4
+#         with:
+#           fetch-depth: 0
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org/
+#       - uses: actions/setup-node@v4
+#         with:
+#           node-version: 20
+#           registry-url: https://registry.npmjs.org/
 
-      - run: npm install
+#       - run: npm install
 
-      - name: Version Packages
-        run: npx changeset version
+#       - name: Version Packages
+#         run: npx changeset version
 
-      - name: Commit Version Bumps
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com]"
-          git add .
-          git commit -m "Version packages" || echo "No changes to commit"
-          git push
+#       - name: Commit Version Bumps
+#         run: |
+#           git config user.name "github-actions[bot]"
+#           git config user.email "41898282+github-actions[bot]@users.noreply.github.com]"
+#           git add .
+#           git commit -m "Version packages" || echo "No changes to commit"
+#           git push
 
-      - name: Configure npm auth
-        run: echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          
-      - name: Publish to npm
-        run: npx changeset publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+#       - name: Configure npm auth
+#         run: echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
+#         env:
+#           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+#       - name: Publish to npm
+#         run: npx changeset publish
+#         env:
+#           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
