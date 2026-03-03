@@ -7,9 +7,14 @@
   "scripts": {
     "build": "npm run build -w",
     "clean": "rm -rf packages/*/dist",
-    "create": "node scripts/create-package.js"
+    "create": "node scripts/create-package.js",
+    "publish-packages": "changeset publish",
+    "changeset": "changeset",
+    "release": "changeset publish",
+    "version-packages": "changeset version"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.30.0",
     "@types/react": "^19.2.14",
     "react": "^19.2.4",
     "tsup": "^8.x",
