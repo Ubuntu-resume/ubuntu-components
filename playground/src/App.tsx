@@ -1,4 +1,4 @@
-import { Battery } from "@ubuntu-web/live-battery-indicator"
+import { Battery } from "@ubuntu-web/battery-indicator"
 
 function App() {
   console.log("This is running")

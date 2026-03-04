@@ -15,7 +15,7 @@ Each package is independently versioned and published under the `@ubuntu-web/*` 
 
 | Package | npm |
 |----------|------|
-| `@ubuntu-web/live-battery-indicator` | https://www.npmjs.com/package/@ubuntu-web/live-battery-indicator |
+| `@ubuntu-web/battery-indicator` | https://www.npmjs.com/package/@ubuntu-web/battery-indicator |
 
 Additional packages will appear here as the ecosystem grows.
 
@@ -44,7 +44,7 @@ Each package:
 Example:
 
 ```bash
-npm install @ubuntu-web/live-battery-indicator
+npm install @ubuntu-web/battery-indicator
 ```
 
 ---
@@ -60,7 +60,7 @@ npm install
 Build a specific package:
 
 ```bash
-npm run build -w @ubuntu-web/live-battery-indicator
+npm run build -w @ubuntu-web/battery-indicator
 ```
 
 ---

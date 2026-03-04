@@ -1,4 +1,10 @@
-# @ubuntu-web/live-battery-indicator
+# @ubuntu-web/battery-indicator
+
+## 1.0.0
+
+### Major Changes
+
+- Package name is updated to better represent its purpose
 
 ## 0.4.1
 
