@@ -2,6 +2,9 @@
 
 A React component for displaying a battery indicator icon with a percentage and charging status. It can automatically fetch device battery status using the native browser API, or accept manual override props.
 
+![alt text](assets/image.png) ![alt text](assets/image-1.png) ![alt text](assets/image-2.png)
+
+
 ## Installation
 
 Install via your preferred package manager:
