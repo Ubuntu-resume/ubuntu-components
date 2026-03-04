@@ -1,4 +1,10 @@
-# @ubuntu-web/battery-indicator
+# @ubuntu-web/live-battery-indicator
+
+## 0.4.1
+
+### Patch Changes
+
+- Update links in README.md
 
 ## 0.4.0
 

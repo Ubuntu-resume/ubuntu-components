@@ -1,4 +1,4 @@
-# @ubuntu-web/battery-indicator
+# @ubuntu-web/live-battery-indicator
 
 A React component for displaying a battery indicator icon with a percentage and charging status. It can automatically fetch device battery status using the native browser API, or accept manual override props.
 
@@ -10,13 +10,13 @@ A React component for displaying a battery indicator icon with a percentage and 
 Install via your preferred package manager:
 
 ```bash
-npm install @ubuntu-web/battery-indicator
+npm install @ubuntu-web/live-battery-indicator
 ```
 ```bash
-yarn add @ubuntu-web/battery-indicator
+yarn add @ubuntu-web/live-battery-indicator
 ```
 ```bash
-pnpm add @ubuntu-web/battery-indicator
+pnpm add @ubuntu-web/live-battery-indicator
 ```
 
 **Note:** This package requires `react` (v18+) and `react-icons` as peer dependencies.
@@ -30,7 +30,7 @@ Import the `Battery` component into your React application to start using it.
 By default, if you don't provide the `percent` prop, the component will attempt to use the browser's native `navigator.getBattery()` API. It automatically updates the UI whenever the device's battery level or charging status changes!
 
 ```tsx
-import { Battery } from "@ubuntu-web/battery-indicator";
+import { Battery } from "@ubuntu-web/live-battery-indicator";
 
 export default function App() {
   return (
@@ -46,7 +46,7 @@ export default function App() {
 You can manually control the displayed battery value and charging status by passing the `percent` prop. This is useful if you need to mock the UI, or if you're fetching battery data from another source.
 
 ```tsx
-import { Battery } from "@ubuntu-web/battery-indicator";
+import { Battery } from "@ubuntu-web/live-battery-indicator";
 
 export default function App() {
   return (

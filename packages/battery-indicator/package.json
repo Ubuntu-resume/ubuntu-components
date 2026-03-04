@@ -1,6 +1,6 @@
 {
-  "name": "@ubuntu-web/battery-indicator",
-  "version": "0.4.0",
+  "name": "@ubuntu-web/live-battery-indicator",
+  "version": "0.4.1",
   "publishConfig": {
     "access": "public"
   },
