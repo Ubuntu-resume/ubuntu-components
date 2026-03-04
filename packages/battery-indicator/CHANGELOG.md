@@ -1,5 +1,11 @@
 # @ubuntu-web/battery-indicator
 
+## 0.3.0
+
+### Minor Changes
+
+- added css and basic str needed
+
 ## 0.2.1
 
 ### Patch Changes

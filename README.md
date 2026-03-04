@@ -134,7 +134,37 @@ GitHub → Settings → Secrets → Actions → New repository secret
 
 ---
 
-## 📄 Root Scripts
+## � Manual Workflows
+
+### Manually Updating a Single Package
+
+1. Change the code inside `packages/<your-package>`.
+2. Rebuild the specific package to reflect modern changes (e.g. for playground testing):
+   ```bash
+   npm run build -w @ubuntu-web/<your-package>
+   ```
+3. Run `npm run changeset` locally to mark your changes for a version bump.
+4. (Optional) Run `npm run version-packages` locally to consume the changeset and update the local `package.json` version.
+5. Commit and push. GitHub actions will handle the publishing on `main`.
+
+### Manually Publishing a Package
+
+Sometimes you might need to manually publish directly from your local machine (e.g., if CI is down, or for an initial test registry push):
+
+1. **Build the packages** you intend to publish:
+   ```bash
+   npm run build
+   ```
+2. **Setup versions**: Ensure you've created a changeset (`npm run changeset`) and consumed it (`npm run version-packages`) so that the package versions and changelogs are up to date.
+3. **Publish**: Run the manual publish command:
+   ```bash
+   npm run publish-packages
+   ```
+   *(Note: You must be logged in to npm via `npm login` and have the appropriate permissions to the `@ubuntu-web` organization).*
+
+---
+
+## �📄 Root Scripts
 
 ```json
 {
