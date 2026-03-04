@@ -4,7 +4,7 @@ function App() {
   console.log("This is running")
   return (
     <div>
-      <Battery />
+      <Battery style={{ gap: "10rem", fontSize: "1rem" }} percent={50} />
     </div>
   )
 }
