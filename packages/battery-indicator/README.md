@@ -2,7 +2,7 @@
 
 A React component for displaying a battery indicator icon with a percentage and charging status. It can automatically fetch device battery status using the native browser API, or accept manual override props.
 
-![alt text](assets/image.png) ![alt text](assets/image-1.png) ![alt text](assets/image-2.png)
+![alt text](https://raw.githubusercontent.com/Ubuntu-resume/ubuntu-components/main/packages/battery-indicator/assets/image.png) ![alt text](https://raw.githubusercontent.com/Ubuntu-resume/ubuntu-components/main/packages/battery-indicator/assets/image-1.png) ![alt text](https://raw.githubusercontent.com/Ubuntu-resume/ubuntu-components/main/packages/battery-indicator/assets/image-2.png)
 
 
 ## Installation
