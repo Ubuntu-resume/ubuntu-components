@@ -1,5 +1,11 @@
 # @ubuntu-web/battery-indicator
 
+## 0.4.0
+
+### Minor Changes
+
+- udpated readme
+
 ## 0.3.0
 
 ### Minor Changes
