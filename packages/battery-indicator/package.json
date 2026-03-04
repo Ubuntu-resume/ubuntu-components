@@ -1,8 +1,8 @@
 {
   "name": "@ubuntu-web/battery-indicator",
   "version": "0.2.1",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -12,6 +12,9 @@
     "react": "^18 || ^19"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts"
+    "build": "tsup src/index.tsx --format esm,cjs --dts"
+  },
+  "dependencies": {
+    "react-icons": "^5.6.0"
   }
 }
