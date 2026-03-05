@@ -1,5 +1,17 @@
 # @ubuntu-web/battery-indicator
 
+## 1.2.0
+
+### Minor Changes
+
+- Updated battery to return round percentages
+
+## 1.1.0
+
+### Minor Changes
+
+- naming and readme update
+
 ## 1.0.0
 
 ### Major Changes

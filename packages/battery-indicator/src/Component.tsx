@@ -11,7 +11,7 @@ export default function Battery(props: {
   // Call the hook unconditionally to respect the Rules of Hooks
   const batteryStats = fetchBatteryPercent();
   const isManual = typeof percent === "number";
-  const finalPercentage = isManual ? Math.round(percent) : batteryStats.percentage * 100;
+  const finalPercentage = isManual ? Math.round(percent) : Math.round(batteryStats.percentage * 100);
   const finalCharging = isManual ? (isChargingCurrent ?? false) : batteryStats.isCharging;
 
   return <div style={{
